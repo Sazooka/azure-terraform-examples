@@ -15,6 +15,7 @@ This structure helps to:
 - Avoid accidental resource overlap  
 - Simplify CI/CD pipelines (per environment)
 
+```
 azure-terraform-examples/
 ├── modules/ # Reusable components (e.g., network, app service)
 │ └── network/ # Example module for Virtual Network
@@ -23,6 +24,7 @@ azure-terraform-examples/
 │ ├── stg/
 │ └── prd/
 └── README.md
+```
 
 Example `env/dev/main.tf`:
 
