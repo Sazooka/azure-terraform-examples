@@ -5,9 +5,6 @@ This repository contains **Infrastructure as Code (IaC)** examples using **Terra
 ## Overview
 These examples demonstrate how to deploy and manage Azure resources using Terraform, including:
 - Virtual Networks (VNet)
-- Container Apps
-- Application Insights
-- Azure Monitor setup
 
 ## License
 
