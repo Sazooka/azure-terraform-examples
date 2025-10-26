@@ -45,3 +45,6 @@ This project is licensed under the MIT License — see the LICENSE
 ## Author
 
 Maintained by Sazooka — IaC Engineer focusing on Azure & Terraform.
+
+## date
+2025/10/26
