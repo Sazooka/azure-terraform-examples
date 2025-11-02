@@ -31,7 +31,21 @@ It compares the current state with the desired configuration and shows a detaile
 terraform plan  
 ```
 
-### Option 1: Save the plan for later (-out)
+### Option 1: Use environment-specific variables (-var-file)
+If you manage multiple environments (like dev, staging, prod),
+use separate .tfvars files to handle differences in names, regions, etc.
+
+Example:
+terraform plan -var-file="dev.tfvars"
+
+```bash
+terraform plan -var-file="env/dev.tfvars"
+terraform plan -var-file="env/prod.tfvars"
+```
+
+This helps you keep your configurations reusable across environments.
+
+### Option 2: Save the plan for later (-out)
 You can save the generated plan and apply it later without re-calculating changes.
 terraform plan -out=planfile.tfplan
 
@@ -39,7 +53,11 @@ Then apply it safely:
 terraform apply "planfile.tfplan"
 This ensures that the applied plan exactly matches what you reviewed earlier.
 
-### Option 2: Target a specific resource or module (-target)
+```bash
+terraform plan -out "./out/20251101.tfplan"
+```
+
+### Option 3: Target a specific resource or module (-target)
 Useful when you want to plan or apply only a part of the infrastructure (for example, one module or one resource).
 terraform plan -target=azurerm_resource_group.example
 
@@ -49,22 +67,17 @@ terraform plan -target=module.resource_group
 
 This is especially handy during step-by-step deployment or troubleshooting specific modules.
 
-### Option 3: Use environment-specific variables (-var-file)
-If you manage multiple environments (like dev, staging, prod),
-use separate .tfvars files to handle differences in names, regions, etc.
-
-terraform plan -var-file="dev.tfvars"
-
-Example:
-
-terraform plan -var-file="env/dev.tfvars"
-terraform plan -var-file="env/prod.tfvars"
-
-This helps you keep your configurations reusable across environments.
+```bash
+terraform plan -target="module.resource_group"
+```
 
 ### Combine options
 You can combine these options for a complete and reproducible plan:
 terraform plan -var-file="env/dev.tfvars" -out="dev-plan.tfplan"
+
+```bash
+terraform plan -var-file "dev.tfvars" -target="module.resource_group" -out "./out/20251101.tfplan" 
+```
 
 Later:
 terraform apply "dev-plan.tfplan"
