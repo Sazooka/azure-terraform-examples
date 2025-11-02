@@ -1,0 +1,6 @@
+.tfstate
+.tfstate.*
+.log
+./apply/*
+./plan/*
+./out/*
