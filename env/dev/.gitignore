@@ -4,3 +4,4 @@
 ./apply/*
 ./plan/*
 ./out/*
+.terraform
