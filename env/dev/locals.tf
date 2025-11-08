@@ -10,6 +10,6 @@ locals {
     Environment = "dev"
   }
 
-  # まとめる
+  # merge
   merged_tags = merge(local.common_tags, local.env_tags)
 }
