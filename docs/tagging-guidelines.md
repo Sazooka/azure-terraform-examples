@@ -91,5 +91,9 @@ resource "azurerm_resource_group" "this" {
 ```
 
 ## Notes
-・Conceptual separation: First understand which tags belong to which level.
-・Implementation: Use locals and merge to apply common and environment-specific tags consistently.
+
+- **Conceptual separation:**  
+  Understand which tags belong to which level (resource, environment, or project). This helps in planning and maintaining consistent tagging.
+
+- **Implementation:**  
+  Use Terraform `locals` and the `merge` function to apply both common (project-level) and environment-specific tags consistently to your resources.
