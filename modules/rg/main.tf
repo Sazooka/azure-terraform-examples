@@ -1,5 +1,5 @@
 ########################################
-#Resource Group
+# Resource Group
 ########################################
 resource "azurerm_resource_group" "this" {
   name    = "${var.env}-Rg"
@@ -10,4 +10,12 @@ resource "azurerm_resource_group" "this" {
       Name = "${var.env}-Rg"
     }
   )
+}
+
+########################################
+# Outputs
+########################################
+output "resource_group_name" {
+  description = "The name of the Resource Group"
+  value       = azurerm_resource_group.this.name
 }

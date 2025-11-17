@@ -47,4 +47,4 @@ This project is licensed under the MIT License — see the LICENSE
 Maintained by Sazooka
 
 ## last update
-2025/11/01
+2025/11/17
