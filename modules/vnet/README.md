@@ -22,9 +22,9 @@ Azure reserves **5 IP addresses per subnet**, so the actual usable IPs are as fo
 - `/24`: Total 256 → Usable 251  
   Example: `192.168.11.0/24`
 
-**Selection criteria:** Consider the number of VMs, AKS pods/services, Azure Firewall, Application Gateway, or other services consuming multiple IPs.  
+**Selection criteria: Consider the number of VMs, AKS pods/services, Azure Firewall, Application Gateway, or other services consuming multiple IPs.  
 Note: Some services, such as **Azure Firewall**, cannot be deployed into `/26` or `/27` subnets. Plan your subnet size accordingly.
----
+**---
 
 ## 2. Connection Sources & Paths
 
@@ -37,7 +37,8 @@ Main connection patterns:
 - Private endpoint only (closed network)
 - Zero-trust design with Azure AD + Private Access
 
-These patterns significantly affect **Subnet layout, NSG rules, Firewall configuration, and Private Endpoint requirements**.
+These patterns significantly affect Subnet layout, NSG rules, Firewall configuration, and Private Endpoint requirements.
+
 ---
 
 ## 3. DNS Server Placement
