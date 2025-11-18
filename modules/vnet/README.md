@@ -69,5 +69,5 @@ resource "azurerm_virtual_network" "this" {
       Name = "${var.env}-Vnet"
     }
   )
-}l
+}
 ```
