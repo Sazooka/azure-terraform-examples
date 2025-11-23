@@ -7,3 +7,8 @@ variable "env" {
   description = "Environment name"
   type        = string
 }
+
+variable "vnet_address_space" {
+  description = "Virtual Network address space"
+  type        = list(string)
+}

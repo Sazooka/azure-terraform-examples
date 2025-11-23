@@ -1,8 +1,8 @@
 module "rg" {
-  source           = "../../modules/rg"
-  env              = var.env
-  location         = var.location
-  common_tags      = local.common_tags
+  source              = "../../modules/rg"
+  env                 = var.env
+  location            = var.location
+  common_tags         = local.common_tags
   }
 
   module "vnet" {
@@ -11,4 +11,5 @@ module "rg" {
   location            = var.location
   common_tags         = local.common_tags
   resource_group_name = module.rg.resource_group_name
+  vnet_address_space  = var.vnet_address_space
   }

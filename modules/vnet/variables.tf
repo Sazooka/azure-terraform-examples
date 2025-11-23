@@ -18,3 +18,8 @@ variable "common_tags" {
   type    = map(string)
   default = {}
 }
+
+variable "vnet_address_space" {
+  description = "Virtual Network address space"
+  type        = list(string)
+}
