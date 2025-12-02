@@ -19,6 +19,4 @@ subnet_definitions = {
   }
   vm  = { address_prefixes   = "10.0.2.0/24" }
   pep = { address_prefixes   = "10.0.3.0/24" }
-
-
 }
