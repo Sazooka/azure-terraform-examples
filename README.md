@@ -48,3 +48,11 @@ Maintained by Sazooka
 
 ## last update
 02/12/2025
+
+# Support
+If you find this project useful, consider supporting me here:
+
+<a href="https://www.buymeacoffee.com/saduka09067" target="_blank">
+  <img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" alt="Buy Me A Coffee">
+</a>
+
