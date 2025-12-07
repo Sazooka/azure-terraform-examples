@@ -1,6 +1,6 @@
-# Azure Subnet (SNet)
+# Azure Subnet
 
-Azure Subnet (SNet) is a logically separated segment within a Virtual Network (VNet).  
+**Azure Subnet (snet)** is a logically separated segment within a Virtual Network (VNet).  
 In subnet design, it is important to understand the service-specific constraints and dependencies, and to organize key design considerations using Terraform implementation examples. Because subnets are difficult to modify later, you must clarify the types and scale of services to be used before starting network construction.
 
 ## 1. Restrictions on Subnet Names and CIDR Ranges

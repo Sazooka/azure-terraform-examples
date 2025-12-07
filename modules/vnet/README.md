@@ -1,6 +1,6 @@
-# Azure Virtual Network (VNet)
+# Azure Virtual Network
 
-Azure Virtual Network (VNet) is the private network foundation in Azure.  
+**Azure Virtual Network (vnet)** is the private network foundation in Azure.  
 **Unclear network design decisions** in IaC can cause subsequent Subnet, NSG, or Firewall configurations to fail. Finalize your network design policy before implementation.
 
 In this example, we assume **internet-facing access**, with a sample VNet `10.0.0.0/20` and Azure default DNS. (See `modules/vnet/main.tf`)  
