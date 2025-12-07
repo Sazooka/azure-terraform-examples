@@ -89,18 +89,8 @@ resource "azurerm_subnet" "subnets" {
 
 ```
 
-
-
-**env/dev/dev.tfvars:**
-```hcl
-```
-
-**env/stg/stg.tfvars:**
-```hcl
-```
-
-**env/prod/prod.tfvars:**
-```hcl
-```
-
 **Benefits:**
+- Service-specific delegation and NSG constraints handled consistently in module design  
+- Flexible subnet definitions using variables (`.tfvars`) for scalability across environments  
+- Clear separation of fixed-name subnets (e.g., GatewaySubnet) and customizable subnets for maintainability  
+- Easier adaptation to new Azure services without major code changes
