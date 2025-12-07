@@ -46,8 +46,8 @@ This project is licensed under the MIT License — see the LICENSE
 
 Maintained by Sazooka
 
-## last update
-02/12/2025
+## Update
+07/12/2025 : Create storage account README.md
 
 # Support
 If you find this project useful, consider supporting me here:
