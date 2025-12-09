@@ -50,7 +50,6 @@ Therefore, in addition to IP filtering, also consider:
 
   * Azure AD authentication
   * Managed Identity
-  * SAS Tokens
   * Other layered authentication mechanisms
 
 * Who writes the data, and who reads it
@@ -78,7 +77,12 @@ Clarify which identity and which network path each application or service should
 ```
 
 
-## 3. 
+## 3. Storage Account Naming Rules
+* Hyphens (-) are not allowed in 2025, which makes names harder to read.
+* Names must follow strict length constraints (3–24 characters).
+* Once a name is used, it cannot be reused even after the storage account is deleted.
+   * In one project, I changed a suffix from xx to xz to satisfy naming rules, and the customer later asked me to “fix it back.” It was a good reminder that a small naming decision can easily turn into rework. 
+
 
 ### Terraform Example
 **modules/snet/main.tf:**
