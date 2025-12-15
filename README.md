@@ -47,6 +47,7 @@ This project is licensed under the MIT License — see the LICENSE
 Maintained by Sazooka
 
 ## Update
+16/12/2025 : Create storage account modules
 07/12/2025 : Create storage account README.md
 
 # Support
