@@ -1,18 +1,33 @@
-# Documentation for Azure Terraform Examples
+# About
+This site provides practical Azure IaC examples and design notes for learners and individual developers.
 
-This site provides key design concepts for building Azure resources with Terraform,
-along with sample configurations for Terraform on Azure.
-The actual source code is hosted on GitHub, and this site summarizes additional context and explanations.
+## Who Am I?
+I'm a cloud infrastructure engineer based in Japan, currently preparing for international job opportunities. This repository represents my journey learning Azure and Terraform while documenting practical patterns that go beyond official documentation.
 
-# Planned Additions
-I plan to add documentation about Storage Accounts and compute resources in the future.
-Feedback is welcome. I’m learning English, so comments would be appreciated.
-I usually use Japanese.
+## Purpose of Contributions
+Contributions are voluntary donations to support Azure usage costs and documentation activities.
+No goods or services are sold.
 
-# Support
+## Refund Policy
+As contributions are voluntary donations, refunds are not provided.
+
+## Contact
+For inquiries, please contact:
+- GitHub Issues: https://github.com/Sazooka/azure-terraform-examples/issues
+- Linked in: https://www.linkedin.com/in/sazuka-naoki-6118652a0/
+
+## What you are accepting money for
+Donations help cover Azure costs and allow me to continue publishing free infrastructure examples.
+
+## Support
+Support is optional and considered a voluntary contribution.
+No digital products are sold.
 If you find this project useful, consider supporting me here:
 
 <a href="https://www.buymeacoffee.com/saduka09067" target="_blank">
   <img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" alt="Buy Me A Coffee">
 </a>
 
+# Legal Notice
+This project operates on a donation basis only and does not sell goods or services.
+Information required under the Act on Specified Commercial Transactions will be provided upon legitimate request.
