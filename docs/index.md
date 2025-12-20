@@ -19,14 +19,6 @@ For inquiries, please contact:
 ## What you are accepting money for
 Donations help cover Azure costs and allow me to continue publishing free infrastructure examples.
 
-## Support
-Support is optional and considered a voluntary contribution.
-No digital products are sold.
-If you find this project useful, consider supporting me here:
-
-<a href="https://www.buymeacoffee.com/saduka09067" target="_blank">
-  <img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" alt="Buy Me A Coffee">
-</a>
 
 # Legal Notice
 This project operates on a donation basis only and does not sell goods or services.
