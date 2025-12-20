@@ -1,7 +1,7 @@
 # Azure Resource Group
 
 An **Azure Resource Group (RG)** is a logical container that holds related Azure resources such as virtual networks, virtual machines, storage accounts, and security components.
-It provides a boundary for **organization, access control, lifecycle management, and deployment.**
+It provides a logical scope for **organizing resources, applying access control, managing lifecycles, and coordinating deployments.**
 
 In Infrastructure as Code (IaC) workflows, the Resource Group is usually the first component created in a new Azure environment.
 All Azure resources must belong to a Resource Group, and establishing it first provides a clear structure for managing subsequent deployments.
