@@ -1,8 +1,13 @@
 # About
 This site provides practical Azure IaC examples and design notes for learners and individual developers.
 
+In addition to published examples, I am also open to technical discussions and consultations related to Azure architecture, Infrastructure as Code (Terraform), and design trade-offs in real-world environments.
+
 ## Who Am I?
-I'm a cloud infrastructure engineer based in Japan, currently preparing for international job opportunities. This repository represents my journey learning Azure and Terraform while documenting practical patterns that go beyond official documentation.
+I'm a cloud infrastructure engineer based in Japan, currently preparing for international job opportunities.
+This repository represents my journey learning Azure and Terraform while documenting practical patterns that go beyond official documentation.
+
+I focus not only on how to build infrastructure, but also on why certain design decisions are made under specific constraints such as cost, security, and operational complexity.
 
 ## Purpose of Contributions
 Contributions are voluntary donations to support Azure usage costs and documentation activities.
@@ -14,11 +19,9 @@ As contributions are voluntary donations, refunds are not provided.
 ## Contact
 For inquiries, please contact:
 - GitHub Issues: https://github.com/Sazooka/azure-terraform-examples/issues
-- Linked in: https://www.linkedin.com/in/sazuka-naoki-6118652a0/
 
 ## What you are accepting money for
 Donations help cover Azure costs and allow me to continue publishing free infrastructure examples.
-
 
 # Legal Notice
 This project operates on a donation basis only and does not sell goods or services.
