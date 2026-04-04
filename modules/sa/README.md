@@ -84,6 +84,25 @@ Clarify which identity and which network path each application or service should
    * In one project, I changed a suffix from xx to xz to satisfy naming rules, and the customer later asked me to “fix it back.” It was a good reminder that a small naming decision can easily turn into rework. 
 
 
+## 4. Dedicated Storage Account for Logs
+
+It is recommended to place log data in a separate, dedicated Storage Account rather than mixing it with other data.
+
+* **Use Immutable Storage (WORM)**
+  * Apply Write Once, Read Many policies to prevent tampering or deletion of logs
+  * Especially important when compliance requirements (audit trails, legal hold) apply
+
+* **Optimize access tiers**
+  * Recent logs: Hot or Cool tier
+  * Logs older than several months to a year: move to Archive tier to reduce costs
+  * Use lifecycle management policies to automate tier transitions
+
+* **Benefits of separation**
+  * Isolates logs from accidental deletion or overwrite risks in application accounts
+  * Allows independent RBAC and network restrictions scoped to logs only
+  * Simplifies cost allocation and audit boundaries
+
+
 ### Terraform Example
 **modules/snet/main.tf:**
 ```hcl
