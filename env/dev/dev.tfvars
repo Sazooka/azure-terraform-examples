@@ -14,7 +14,7 @@ subnet_definitions = {
           delegation_name    = "containerapp_delegation",
           delegation_service = "Microsoft.App/environments",
           delegation_actions = [
-            "Microsoft.Network/virtualNetworks/subnets/action"
+            "Microsoft.Network/virtualNetworks/subnets/join/action"
           ]
   }
   vm  = { address_prefixes   = "10.0.2.0/24" }
