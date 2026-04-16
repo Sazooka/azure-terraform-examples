@@ -1,24 +1,30 @@
 # Azure Functions
 
-**Azure Virtual Network (vnet)** is the private network foundation in Azure.  
-**Unclear network design decisions** in IaC can cause subsequent Subnet, NSG, or Firewall configurations to fail. Finalize your network design policy before implementation.
+Azure Functions is a serverless compute service designed to execute small units of logic based on specific triggers.
+In this repository, Functions are treated not as a feature, but as a design choice
 
-In this example, we assume **internet-facing access**, with a sample VNet `10.0.0.0/20` and Azure default DNS. (See `modules/vnet/main.tf`)  
+## 1. When to Choose Azure Functions
 
+Azure provides multiple compute options such as Virtual Machines, Container Apps, and App Service.
+This repository prioritizes Azure Functions when:
+The required logic can be executed in small, independent units
+Infrastructure management should be minimized
+Execution is triggered by events, requests, or schedules
+Always-on compute is not required
 
-## 1. IP Address Planning
+If the system can be implemented without managing servers or containers,
+Azure Functions is preferred as the default option.
 
-Azure reserves **5 IP addresses per subnet**, so the actual usable IPs are as follows:
+## 2.What This Repository Provides
 
-- `/16`: Total 65,536 → Usable 65,531  
-  Example: `10.0.0.0/16`
-- `/20`: Total 4,096 → Usable 4,091  
-  Example: `10.0.0.0/20`
-- `/24`: Total 256 → Usable 251  
-  Example: `192.168.11.0/24`
+This repository defines the infrastructure layer for Azure Functions using Terraform.
 
-**Selection criteria:** Consider the number of VMs, AKS pods/services, Azure Firewall, Application Gateway, or other services consuming multiple IPs.  
-**Note:** Some services, such as **Azure Firewall**, cannot be deployed into `/26` or `/27` subnets. Plan your subnet size accordingly.
+Function App
+Hosting plan (Consumption)
+Storage Account (required for Functions)
+Managed Identity (if applicable)
+
+Application code and actual use cases are implemented in a separate repository.
 
 
 ### Environment-Specific Considerations

@@ -1,5 +1,5 @@
 ########################################
-# Virtual Network
+# Functions
 ########################################
 resource "azurerm_virtual_network" "this"{
   name                = "${var.env}-Vnet"
